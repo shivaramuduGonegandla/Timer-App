@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.timer-container {
+  text-align: center;
+  background: rgba(30, 30, 30, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.timer-title {
+  font-size: 2rem;
+  color: #61dafb;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.timer-display {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px; /* Adds space between buttons */
+}
+
+.timer-button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.timer-button.start {
+  background: #28a745; /* Green */
+}
+
+.timer-button.start:hover {
+  background: #218838;
+}
+
+.timer-button.stop {
+  background: #dc3545; /* Red */
+}
+
+.timer-button.stop:hover {
+  background: #c82333;
+}
+
+.timer-button.pause {
+  background: #ffc107; /* Yellow */
+}
+
+.timer-button.pause:hover {
+  background: #e0a800;
+}
+
+.timer-button.reset {
+  background: #6c757d; /* Gray */
+}
+
+.timer-button.reset:hover {
+  background: #5a6268;
+}
+
+.timer-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
